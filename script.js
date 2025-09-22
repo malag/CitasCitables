@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
             quotes = await response.json();
             printBtn.disabled = false;
-            memoText.textContent = 'Presione \'Imprimir\' si necesitas una cita citable...';
+            memoText.textContent = 'Presione \'Imprimir\' si necesita una cita citable...';
         } catch (error) {
             console.error("No se pudieron cargar las citas:", error);
             memoText.textContent = 'Error de atasco de papel en el sistema moral. Inténtalo de nuevo.';
